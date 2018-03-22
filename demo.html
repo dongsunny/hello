@@ -6,7 +6,7 @@
     <script type="text/javascript" src="js/jquery-1.12.1.js"></script>
 
     <script>
-        $.post("https://www.sojson.com/open/api/weather/json.shtml?city=北京",{},function(result){
+        $.post("http://www.weather.com.cn/data/sk/101010100.html",{},function(result){
             $("#weather").html(result);
         },"json");
 
