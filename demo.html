@@ -6,10 +6,14 @@
     <script type="text/javascript" src="js/jquery-1.12.1.js"></script>
 
     <script>
-        alert(1);
+        $.post("https://www.sojson.com/open/api/weather/json.shtml?city=北京",{},function(result){
+            $("#weather").html(result);
+        },"json");
+
     </script>
 </head>
 <body>
 wechart...... like
+<div id="weather">ddd</div>
 </body>
 </html>
